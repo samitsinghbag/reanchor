@@ -1,0 +1,29 @@
+{
+  "poll_interval_ms": 500,
+  "instant_trigger": {
+    "processes": ["Netflix.exe", "Steam.exe", "Battle.net.exe", "EpicGamesLauncher.exe", "Discord.exe"],
+    "title_keywords": ["YouTube", "Netflix", "Hulu", "Prime Video", "Reddit", "Twitter", "Facebook"]
+  },
+  "work_context": {
+    "processes": ["code.exe", "Code.exe", "pycharm64.exe", "idea64.exe", "cmd.exe", "powershell.exe", "explorer.exe", "notepad.exe"],
+    "title_keywords": ["Visual Studio", "VS Code", "GitHub", "Docs", "JIRA", "Confluence", "Stack Overflow", "Outlook", "Teams", "Slack"]
+  },
+  "heuristics": {
+    "idle_trigger_seconds": 90,
+    "switch_trigger_count": 8,
+    "stuck_time_seconds": 900,
+    "stuck_idle_seconds": 45
+  },
+  "rate_limit": {
+    "min_seconds_between_llm_calls": 30,
+    "min_seconds_between_popups": 180
+  },
+  "popup": {
+    "duration_ms": 2000,
+    "character_image_path": "assets/character.png"
+  },
+  "llm": {
+    "endpoint": "https://api.placeholder-llm.example/v1/chat/completions",
+    "model": "placeholder-llm-model"
+  }
+}
